@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ApartBlocks from "@/components/sections/ApartBlocks";
 import Eyebrow from "@/components/ui/Eyebrow";
 import AnimatedWords from "@/components/sections/AnimatedWords";
+import WhatWeDoSection from "@/components/sections/WhatWeDoSection";
 
 export const metadata: Metadata = {
   title: "About Us | Global Business Summits",
@@ -24,8 +25,7 @@ export default function About() {
       <section className="border-t border-navy/20 py-24">
         <div className="mx-auto max-w-[1440px] px-6 lg:px-12">
           <p className="max-w-2xl text-2xl font-semibold leading-snug text-navy md:text-3xl">
-            We didn&apos;t set out to organize events. We set out to solve a problem —
-            that most industry gatherings talk a lot and deliver little.
+            We didn&apos;t set out to organize events. We set out to solve a problem .
           </p>
         </div>
       </section>
