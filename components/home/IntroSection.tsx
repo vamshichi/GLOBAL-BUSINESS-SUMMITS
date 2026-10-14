@@ -5,7 +5,7 @@ export default function IntroSection() {
 
         {/* Main Introduction */}
         <p className="text-3xl font-bold leading-tight tracking-tight md:text-5xl">
-          GLOBAL BUSINESS SUMMITS is a full-spectrum business events
+          GLOBAL BUSINESS SUMMITS GROUP is a full-spectrum business events
           company, we build Conferences, run Summits, train talent,
           and manage events end-to-end, across industries and
           continents.

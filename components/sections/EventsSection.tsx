@@ -8,7 +8,7 @@ const events = [
     title: "GLOBAL AI GRCS SUMMIT 2026",
     theme: "The Intelligence of Trust: Governing the Autonomous Future",
     location: "Mumbai, India",
-    date: "10 December 2026",
+    date: "21 January 2027",
     description:
       "A high-impact global summit bringing together AI governance leaders, regulators, risk professionals, compliance experts and enterprise decision-makers to shape the future of responsible, secure and accountable AI.",
   },

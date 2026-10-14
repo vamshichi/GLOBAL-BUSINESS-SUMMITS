@@ -1,3 +1,4 @@
+
 "use client";
 
 import { motion } from "framer-motion";
@@ -5,202 +6,101 @@ import ContactForm from "@/components/ui/ContactForm";
 
 export default function ContactSection() {
   return (
-    <section className="relative overflow-hidden bg-white px-6 py-24 lg:px-12 lg:py-32">
-      {/* Background glow */}
+    <section
+      id="contact"
+      className="relative isolate overflow-hidden bg-white px-5 py-20 sm:px-8 lg:px-12 lg:py-28"
+    >
+      {/* Background accents */}
       <div
-        aria-hidden
-        className="
-          pointer-events-none
-          absolute
-          -right-40
-          top-20
-          h-[500px]
-          w-[500px]
-          rounded-full
-          bg-teal/10
-          blur-[140px]
-        "
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-40 top-20 -z-10 h-[450px] w-[450px] rounded-full bg-teal/10 blur-[120px]"
       />
 
       <div
-        aria-hidden
-        className="
-          pointer-events-none
-          absolute
-          -left-40
-          bottom-0
-          h-[350px]
-          w-[350px]
-          rounded-full
-          bg-cyan/10
-          blur-[120px]
-        "
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-20 -left-40 -z-10 h-[350px] w-[350px] rounded-full bg-cyan/10 blur-[110px]"
       />
 
-      <div className="relative z-10 mx-auto max-w-[1440px]">
-        {/* Top line */}
-        <div className="mb-14 flex items-center gap-4">
-          <span className="h-px w-12 bg-teal" />
-
-          <span className="text-xs font-bold uppercase tracking-[0.25em] text-navy/45">
+      <div className="mx-auto w-full max-w-7xl">
+        {/* Section label */}
+        <div className="mb-12 flex items-center gap-4 sm:mb-16">
+          <span className="h-px w-12 shrink-0 bg-teal" />
+          <span className="text-[11px] font-bold uppercase tracking-[0.24em] text-navy/50 sm:text-xs">
             Contact & Partnerships
           </span>
         </div>
 
-        <div className="grid gap-16 lg:grid-cols-[1fr_1.05fr] lg:gap-24">
-          {/* =================================================
-              LEFT
-          ================================================= */}
-
-          <div className="flex flex-col justify-between">
+        {/* Main layout */}
+        <div className="grid min-w-0 grid-cols-1 items-start gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
+          {/* Left content */}
+          <div className="flex min-w-0 flex-col justify-between">
             <div>
               <motion.h2
-                initial={{
-                  opacity: 0,
-                  y: 30,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                viewport={{
-                  once: true,
-                  margin: "-100px",
-                }}
-                transition={{
-                  duration: 0.7,
-                }}
-                className="
-                  max-w-3xl
-                  text-[clamp(3rem,6vw,6.5rem)]
-                  font-black
-                  uppercase
-                  leading-[.86]
-                  tracking-[-0.06em]
-                  text-navy
-                "
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.65 }}
+                className="max-w-2xl text-[clamp(2.8rem,5.5vw,5.8rem)] font-black uppercase leading-[0.9] tracking-[-0.065em] text-navy"
               >
                 LET&apos;S BUILD
                 <br />
                 SOMETHING
                 <br />
-                <span className="text-teal">
-                  WORTH SHOWING
-                </span>
+                <span className="text-teal">WORTH SHOWING</span>
                 <br />
                 UP FOR.
               </motion.h2>
 
               <motion.p
-                initial={{
-                  opacity: 0,
-                  y: 20,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                viewport={{
-                  once: true,
-                }}
-                transition={{
-                  duration: 0.6,
-                  delay: 0.15,
-                }}
-                className="
-                  mt-8
-                  max-w-lg
-                  text-base
-                  leading-relaxed
-                  text-navy/60
-                  md:text-lg
-                "
+                initial={{ opacity: 0, y: 18 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.12 }}
+                className="mt-7 max-w-lg text-base leading-8 text-navy/65 sm:text-lg"
               >
-                Got an industry to move, a team to train,
-                or an event to run? Let&apos;s create
-                something people will want to show up for.
+                Got an industry to move, a team to train, or an event to run?
+                Let&apos;s create something people will want to show up for.
               </motion.p>
             </div>
 
             {/* Bottom statement */}
-
             <motion.div
-              initial={{
-                opacity: 0,
-                y: 20,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{
-                once: true,
-              }}
-              transition={{
-                duration: 0.6,
-                delay: 0.25,
-              }}
-              className="
-                mt-12
-                hidden
-                border-t
-                border-navy/10
-                pt-6
-                lg:block
-              "
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="mt-12 hidden border-t border-navy/10 pt-6 lg:block"
             >
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-navy/35">
+              <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-navy/45">
                 Conferences · Summits · Trainings · Managed Events
               </p>
 
-              <p className="mt-2 text-sm text-navy/45">
+              <p className="mt-3 text-sm text-navy/55">
                 One conversation can start the next big move.
               </p>
             </motion.div>
           </div>
 
-          {/* =================================================
-              RIGHT — FORM
-          ================================================= */}
-
+          {/* Right form card */}
           <motion.div
-            initial={{
-              opacity: 0,
-              y: 30,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            viewport={{
-              once: true,
-              margin: "-100px",
-            }}
-            transition={{
-              duration: 0.7,
-              delay: 0.1,
-            }}
-            className="
-              relative
-              border
-              border-navy/10
-              bg-white
-              p-6
-              shadow-[0_25px_80px_rgba(8,25,55,0.07)]
-              md:p-8
-              lg:p-10
-            "
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.65, delay: 0.1 }}
+            className="w-full min-w-0 overflow-hidden rounded-2xl border border-navy/10 bg-white p-5 shadow-[0_20px_70px_rgba(8,25,55,0.08)] sm:p-8 lg:p-7 xl:p-9"
           >
-            {/* Form header */}
-
-            <div className="mb-8 border-b border-navy/10 pb-6">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-teal">
+            <div className="mb-7 border-b border-navy/10 pb-6">
+              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-teal">
                 Start a conversation
               </p>
 
-              <h3 className="mt-2 text-2xl font-black uppercase tracking-tight text-navy md:text-3xl">
+              <h3 className="mt-3 text-2xl font-black tracking-tight text-navy sm:text-3xl">
                 Tell us what you&apos;re building.
               </h3>
+
+              <p className="mt-3 text-sm leading-6 text-navy/55">
+                Share a few details and our team will get back to you.
+              </p>
             </div>
 
             <ContactForm />

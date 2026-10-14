@@ -16,7 +16,7 @@ const featuredEvents = [
     theme:
       "The Intelligence of Trust: Governing the Autonomous Future",
     location: "Mumbai, India",
-    date: "10 December 2026",
+    date: "21 January 2027",
     category: "AI • Governance • Risk",
   },
   {

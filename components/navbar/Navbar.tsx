@@ -80,7 +80,7 @@ export default function Navbar() {
           className="flex items-center"
         >
           <Image
-            src="/logo/logo.jpeg"
+            src="/logo/logo.png"
             alt="Global Business Summits"
             width={180}
             height={90}
